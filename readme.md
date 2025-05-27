@@ -1,4 +1,4 @@
-# 📰 Product PDR: AI-Powered Full-Stack PR Agency Platform
+# 📰 Product PDR: AI-Powered Full-Stack PR Agency
 
 ## 💡 Idea Behind This Project
 
