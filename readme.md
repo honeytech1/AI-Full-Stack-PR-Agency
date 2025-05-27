@@ -1,10 +1,5 @@
 # 📰 Product PDR: AI-Powered Full-Stack PR Agency Platform
 
-This idea was originally published on my Linkedind https://www.linkedin.com/feed/update/urn:li:activity:7333001533128613910/. 
-In March 2025, while talking lectures on my post gratuate course in Flame Universy (Pune), i got the idea to train the MCP for frameworks and moudle of "Digital PR and Online Reputation Management". Idea was to automate the ground research work involved in Diital PR, to empower students on griwth parth to learn aboutthe coiurse quickly. 
-https://www.linkedin.com/feed/update/urn:li:activity:7313205339410026497/
-
-
 
 ## 💡 Idea Behind This Project
 
