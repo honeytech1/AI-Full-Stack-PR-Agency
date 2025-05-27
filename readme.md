@@ -181,6 +181,7 @@ Build a **modular, AI-powered PR Suite** that enables professionals to automate,
 
 ## 🏗️ 2. High-Level System Architecture Diagram
 
+
                                ┌────────────────────────────┐
                                │     Frontend (Next.js)     │
                                │ - Dashboard                │
