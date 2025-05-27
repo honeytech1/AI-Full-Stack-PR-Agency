@@ -162,6 +162,102 @@ Build a **modular, AI-powered PR Suite** that enables professionals to automate,
 ---
 
 
+# 🧱 MVP Architecture: AI-Driven PR Platform
+
+## 🧩 1. Core Modules & Features for MVP
+
+| Feature Name              | Description                                                     | Priority     |
+|---------------------------|-----------------------------------------------------------------|--------------|
+| Media Reputation Audit    | NLP + Sentiment analysis on scraped news/blog/podcast mentions | ✅ Core       |
+| Brief Builder Bot         | Auto-generate PR briefs and hooks using LLM prompts             | ✅ Core       |
+| Message Stress Testing    | Simulate journalist Q&A from scraped articles using RAG         | ✅ Core       |
+| PR Impact Attribution     | Connect media mentions to traffic/events via GA4 or similar     | ✅ Core       |
+| Micro-content Repurposing| Press release to content formats like carousels & threads       | ✅ Core       |
+| Smart FAQ Widget          | Embeddable Q&A for journalists using AI                         | Nice-to-have |
+| Interview Coach (Beta)    | Simulated interview training for founders/CxOs                  | Nice-to-have |
+| Real-Time Crisis Detector | Sentiment spike alerting via crawler/API                        | V2           |
+
+---
+
+## 🏗️ 2. High-Level System Architecture Diagram
+
+                               ┌────────────────────────────┐
+                               │     Frontend (Next.js)     │
+                               │ - Dashboard                │
+                               │ - Brief Builder            │
+                               │ - Sentiment Reports        │
+                               │ - Q&A Simulation UI        │
+                               └──────────┬─────────────────┘
+                                          │
+                   ┌──────────────────────┼────────────────────────┐
+                   │                      │                        │
+         ┌────────▼──────┐     ┌──────────▼─────────┐   ┌──────────▼────────┐
+         │  API Gateway  │     │   Auth & User Mgmt  │   │   File/Media Store│
+         │(FastAPI/Express)│     │(Clerk/Auth0/Firebase)│   │(Firebase/AWS S3)│
+         └──────┬─────────┘     └──────────┬─────────┘   └───────────────────┘
+                │                         │
+   ┌────────────▼─────────────────────────▼───────────────┐
+   │                     Backend Core                     │
+   │ ┌──────────────────────────────────────────────────┐ │
+   │ │ Feature Modules                                   │ │
+   │ │ - Reputation Scanner (LLM + NER + Sentiment)      │ │
+   │ │ - Brief Generator (LLM fine-tuned on PR)          │ │
+   │ │ - Q&A Bot (RAG over journalist corpus)            │ │
+   │ │ - Attribution Engine (media ↔ analytics linkage)  │ │
+   │ │ - Micro-content Generator                         │ │
+   │ └──────────────────────────────────────────────────┘ │
+   └─────────────────────┬────────────────────────────────┘
+                         │
+      ┌──────────────────▼───────────────────┐
+      │         Vector DB (Weaviate)          │ ← journalist embeddings, brand data
+      └──────────────────┬───────────────────┘
+                         │
+           ┌─────────────▼────────────┐
+           │       LLM API Layer      │ ← (Gemini/OpenAI, or fine-tuned models)
+           └──────────────────────────┘
+
+---
+
+## 🔌 3. Third-Party Integrations (for MVP)
+
+| Purpose                   | Tool/Service                        |
+|---------------------------|-------------------------------------|
+| Auth & Multi-Tenant       | Clerk.dev or Firebase Auth          |
+| Storage (Press Releases)  | AWS S3 / Firebase Storage           |
+| LLM APIs                  | OpenAI / Gemini / Claude            |
+| Web Scraping              | Diffbot, NewsCatcher, or SerpAPI    |
+| Analytics Attribution     | Google Analytics (GA4), PostHog     |
+| Vector Database           | Weaviate / Pinecone                 |
+| Embedding Models          | OpenAI ADA-002 / Cohere Embed       |
+| Social Content Export     | Figma / Canva API / Zapier          |
+
+---
+
+## 🛠️ 4. Dev Stack Suggestion
+
+| Layer       | Tech Choice                         |
+|-------------|-------------------------------------|
+| Frontend    | Next.js + Tailwind CSS              |
+| Backend     | FastAPI or Node.js (Express)        |
+| Database    | PostgreSQL via Supabase or Prisma   |
+| Vector DB   | Weaviate (with hybrid filters)      |
+| Auth        | Clerk.dev or Firebase Auth          |
+| LLM API     | OpenAI (gpt-4o) or Gemini Pro       |
+| Deployment  | Vercel (FE) + Render / Railway (BE) |
+| Monitoring  | Sentry + PostHog                    |
+
+---
+
+## 🚦 5. Phased Rollout Plan
+
+| Phase | Goal                            | Features Focus                            |
+|-------|----------------------------------|-------------------------------------------|
+| Alpha | Internal prototype validation    | Brief builder, sentiment audit            |
+| Beta  | Early testers (freemium model)   | Add stress test & attribution             |
+| V1    | Open to small PR firms/agencies | Micro-content, media page widget          |
+| V2    | B2B SaaS scale (comms teams)     | Crisis detector, API integrations         |
+
+
 ---
 
 ## 🔌 3. Third-Party Integrations (for MVP)
