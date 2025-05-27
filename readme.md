@@ -37,8 +37,11 @@ This builds upon earlier reflections shared [here](https://www.linkedin.com/feed
 - AI Interview Coach
 - Real-Time Crisis Detection
 
+<img width="1111" alt="image" src="https://github.com/user-attachments/assets/19bcbe07-6c49-4ea4-a6f9-4c3c757617e0" />
 
-## 🧩 Problem
+
+
+## 🧩 Current Problem
 
 Modern PR professionals are drowning in manual workflows, reactive storytelling, and disconnected analytics. While AI tools exist in isolation, there's no **unified, productized stack** built specifically for PR pros that seamlessly integrates:
 
