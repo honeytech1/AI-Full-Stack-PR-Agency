@@ -182,40 +182,24 @@ Build a **modular, AI-powered PR Suite** that enables professionals to automate,
 ## 🏗️ 2. High-Level System Architecture Diagram
 
 
-                               ┌────────────────────────────┐
-                               │     Frontend (Next.js)     │
-                               │ - Dashboard                │
-                               │ - Brief Builder            │
-                               │ - Sentiment Reports        │
-                               │ - Q&A Simulation UI        │
-                               └──────────┬─────────────────┘
-                                          │
-                   ┌──────────────────────┼────────────────────────┐
-                   │                      │                        │
-         ┌────────▼──────┐     ┌──────────▼─────────┐   ┌──────────▼────────┐
-         │  API Gateway  │     │   Auth & User Mgmt  │   │   File/Media Store│
-         │(FastAPI/Express)│     │(Clerk/Auth0/Firebase)│   │(Firebase/AWS S3)│
-         └──────┬─────────┘     └──────────┬─────────┘   └───────────────────┘
-                │                         │
-   ┌────────────▼─────────────────────────▼───────────────┐
-   │                     Backend Core                     │
-   │ ┌──────────────────────────────────────────────────┐ │
-   │ │ Feature Modules                                   │ │
-   │ │ - Reputation Scanner (LLM + NER + Sentiment)      │ │
-   │ │ - Brief Generator (LLM fine-tuned on PR)          │ │
-   │ │ - Q&A Bot (RAG over journalist corpus)            │ │
-   │ │ - Attribution Engine (media ↔ analytics linkage)  │ │
-   │ │ - Micro-content Generator                         │ │
-   │ └──────────────────────────────────────────────────┘ │
-   └─────────────────────┬────────────────────────────────┘
-                         │
-      ┌──────────────────▼───────────────────┐
-      │         Vector DB (Weaviate)          │ ← journalist embeddings, brand data
-      └──────────────────┬───────────────────┘
-                         │
-           ┌─────────────▼────────────┐
-           │       LLM API Layer      │ ← (Gemini/OpenAI, or fine-tuned models)
-           └──────────────────────────┘
+graph TD
+    FE["Frontend (Next.js)\n- Dashboard\n- Brief Builder\n- Sentiment Reports\n- Q&A Simulation UI"]
+
+    FE --> APIGW["API Gateway\n(FastAPI/Express)"]
+    FE --> AUTH["Auth & User Mgmt\n(Clerk/Auth0/Firebase)"]
+    FE --> STORAGE["File/Media Store\n(Firebase/AWS S3)"]
+
+    APIGW --> CORE["Backend Core"]
+
+    CORE --> FM["Feature Modules"]
+    FM --> RS["Reputation Scanner\n(LLM + NER + Sentiment)"]
+    FM --> BG["Brief Generator\n(LLM fine-tuned on PR)"]
+    FM --> QA["Q&A Bot\n(RAG over journalist corpus)"]
+    FM --> AE["Attribution Engine\n(Media ↔ Analytics linkage)"]
+    FM --> MG["Micro-content Generator"]
+
+    CORE --> VECTOR["Vector DB (Weaviate)\nJournalist embeddings, brand data"]
+    VECTOR --> LLM["LLM API Layer\n(Gemini/OpenAI or fine-tuned models)"]
 
 ---
 
