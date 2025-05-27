@@ -22,6 +22,8 @@ This builds upon earlier reflections shared [here](https://www.linkedin.com/feed
 
 ---
 
+https://github.com/user-attachments/assets/9dbfe67c-66cd-4633-9901-c2055cf95017
+
 ## 🧱 What This Project Includes
 
 * Media Sentiment & Reputation Auto-Audits
@@ -35,6 +37,15 @@ This builds upon earlier reflections shared [here](https://www.linkedin.com/feed
 * Real-Time Crisis Detection
 
 <img width="1111" alt="image" src="https://github.com/user-attachments/assets/19bcbe07-6c49-4ea4-a6f9-4c3c757617e0" />
+
+##**This was the promt created in Course**
+![image](https://github.com/user-attachments/assets/e2f35284-9ba8-4bdd-a263-66d8ea9961c7)
+
+
+
+
+
+
 
 ## 🧩 Current Problem
 
