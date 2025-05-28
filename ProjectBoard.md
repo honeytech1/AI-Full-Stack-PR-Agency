@@ -118,17 +118,6 @@ Each sprint includes:
 
 ---
 
-## 🧑‍💻 Contributors & Roles
-
-| Name     | Role            | Area                         |
-| -------- | --------------- | ---------------------------- |
-| PM (You) | Product Manager | Roadmap, QA, Release mgmt    |
-| Dev A    | Full-stack Dev  | Frontend + API integration   |
-| Dev B    | LLM Engineer    | Agent logic, LangGraph setup |
-| Dev C    | UI Designer     | UX, drag-and-drop studio     |
-| Dev D    | Infra Engineer  | CI/CD, Weaviate, Supabase    |
-
----
 
 ## 📎 Resources
 
