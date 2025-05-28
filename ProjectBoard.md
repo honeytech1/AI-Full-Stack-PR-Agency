@@ -59,40 +59,27 @@ This project board outlines the roadmap, milestones, and deliverables for the op
 
 ## ✅ Phase-Wise Toolchain
 
-### 📦 Phase 0: Open Source Setup
-
-* **Turborepo** – Monorepo manager
-* **shadcn/ui** + Tailwind – UI scaffolding
-* **Clerk.dev / Supabase Auth** – Auth + roles
-* **Supabase + Prisma** – Postgres ORM & database
-* **Railway / Render** – CI/CD & deployment
-
-### ⚙️ Phase 1: Core Features
-
-* **Haystack / LLMWare** – Sentiment + NER audit agent
-* **LangChain + Weaviate** – Narrative gap detection
-* **LangGraph** – Agent orchestration engine
-* **PromptLayer + LangChain** – Prompt versioning & control
-* **OpenRouter / Ollama** – LLM API routing layer
-
-### 🧪 Phase 2: Analytics
-
-* **PostHog / Ackee** – Attribution & behavior tracking
-* **Nivo / Tanstack Charts** – Dashboard visualization
-* **Smart Widget SDK** – Custom Q\&A embedding
-
-### 🎯 Phase 3: Studio Tools
-
-* **UnifyAI / Prompt Tools** – Repurposing agent
-* **DndKit** – Drag-drop interface
-* **Canva/Figma API** – Export content templates
-* **Plop.js** – Prompt skeleton generator
-
-### ⚠️ Phase 4: Risk & Coaching
-
-* **RSSHub** – Web monitoring feed integration
-* **LangChain** – Executive Q\&A simulation
-* **Sentry + OpenStatus** – Monitoring + uptime
+| Phase   | Tool / Library              | Purpose                                 |
+| ------- | --------------------------- | --------------------------------------- |
+| Phase 0 | Turborepo, Supabase, Prisma | Setup monorepo, DB, ORM                 |
+|         | shadcn/ui + Tailwind        | UI scaffolding                          |
+|         | Clerk.dev / Supabase Auth   | Auth and roles                          |
+|         | Railway / Render            | CI/CD deployment                        |
+| Phase 1 | Haystack / LLMWare          | Sentiment & NER pipeline                |
+|         | LangChain + Weaviate        | Narrative comparison engine             |
+|         | LangGraph                   | Agent orchestration framework           |
+|         | PromptLayer + LangChain     | Prompt versioning and flow              |
+|         | OpenRouter / Ollama         | LLM API integration                     |
+| Phase 2 | PostHog / Ackee             | Attribution and user analytics          |
+|         | Nivo / Tanstack Charts      | Dashboard and data visuals              |
+|         | Smart Widget SDK            | Embeddable Q\&A for journalists         |
+| Phase 3 | UnifyAI / Prompt Tools      | Content repurposing logic               |
+|         | DndKit                      | Drag-and-drop content UI                |
+|         | Canva/Figma API             | Export social assets                    |
+|         | Plop.js                     | Prompt templating and CLI               |
+| Phase 4 | RSSHub                      | Real-time sentiment and news monitoring |
+|         | LangChain                   | Executive Q\&A training                 |
+|         | Sentry + OpenStatus         | Error monitoring + uptime alerts        |
 
 ---
 
@@ -119,13 +106,15 @@ Each sprint includes:
 
 ## 📦 Labels & Tags
 
-* `feature` – Core feature work
-* `bug` – Bugs or errors
-* `infra` – Deployment, DB, or auth-related
-* `agent` – LangGraph or LLM agent logic
-* `prompt` – Prompt tuning / RAG
-* `ui` – Frontend component styling
-* `release` – Milestone tagging for Alpha, Beta, V1
+| Label     | Description                           |
+| --------- | ------------------------------------- |
+| `feature` | Core feature work                     |
+| `bug`     | Bugs or errors                        |
+| `infra`   | Deployment, DB, or auth-related       |
+| `agent`   | LangGraph or LLM agent logic          |
+| `prompt`  | Prompt tuning / RAG                   |
+| `ui`      | Frontend component styling            |
+| `release` | Milestone tagging for Alpha, Beta, V1 |
 
 ---
 
