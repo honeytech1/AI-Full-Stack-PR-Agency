@@ -1,28 +1,24 @@
-# 📰 Product PDR: AI-Powered Full-Stack PR Agency
+# 📰 Product PDR: AI-Powered Full-Stack PR Suite (MCP)
 
-## 💡 Idea Behind This Project
+## 💡 Inspiration
 
-This idea was originally shared on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7333001533128613910/) in March 2025.
+Originally shared in [this LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7333001533128613910/), this project was born during my Digital PR course at **FLAME University, Pune**. I noticed how students and professionals alike were bogged down by repetitive, manual PR workflows.
 
-While teaching a postgraduate course on *Digital PR and Online Reputation Management* at **FLAME University, Pune**, I realized how repetitive and time-consuming the foundational work in PR can be — especially for students just starting out.
+That led to the concept of an AI-native **Media Communication Partner (MCP)**—a system designed to automate foundational PR work.
 
-That’s when the concept of an AI-powered **MCP (Media Communication Partner)** took shape.
+## 🌟 Our Goal
 
-### 🎯 The Goal
+* Automate core PR tasks like sentiment audits, hook generation, and gap detection
+* Accelerate learning with real-time, intelligent suggestions
+* Build a unified, modular, and scalable PR productivity platform
 
-* Automate research tasks like sentiment scanning, narrative gap detection, and PR brief creation
-* Help learners grasp key concepts faster through real-time insights and use-cases
-* Productize the core building blocks of PR into a scalable, intelligent platform
-
-This builds upon earlier reflections shared [here](https://www.linkedin.com/feed/update/urn:li:activity:7313205339410026497/).
+This builds on previous reflections shared [here](https://www.linkedin.com/feed/update/urn:li:activity:7313205339410026497/).
 
 <img width="435" alt="image" src="https://github.com/user-attachments/assets/b2e5561e-822d-4125-b6b0-e9da9365d14d" />
 
 <img width="363" alt="image" src="https://github.com/user-attachments/assets/c2cda03d-3bf0-48b5-85f1-ee0b34022224" />
 
----
-
-https://github.com/user-attachments/assets/9dbfe67c-66cd-4633-9901-c2055cf95017
+[![Video Prompt](https://github.com/user-attachments/assets/9dbfe67c-66cd-4633-9901-c2055cf95017)](https://github.com/user-attachments/assets/9dbfe67c-66cd-4633-9901-c2055cf95017)
 
 ## 🧱 What This Project Includes
 
@@ -38,250 +34,190 @@ https://github.com/user-attachments/assets/9dbfe67c-66cd-4633-9901-c2055cf95017
 
 <img width="1111" alt="image" src="https://github.com/user-attachments/assets/19bcbe07-6c49-4ea4-a6f9-4c3c757617e0" />
 
-##**This was the promt created in Course**
-![image](https://github.com/user-attachments/assets/e2f35284-9ba8-4bdd-a263-66d8ea9961c7)
+## 📋 Prompt Created in Course
+
+![Prompt image](https://github.com/user-attachments/assets/e2f35284-9ba8-4bdd-a263-66d8ea9961c7)
+
+## 🧩 Problem
+
+PR tools today are fragmented. You juggle between media monitoring, content creation, and crisis alerts—all while battling disjointed analytics. There's no **end-to-end AI-powered platform** for PR pros.
 
 
+## 🌈 Vision
 
-## 🧩 Current Problem
+We aim to build the **Notion x HubSpot for PR**: a modular, AI-powered suite that enables:
 
-Modern PR professionals are drowning in manual workflows, reactive storytelling, and disconnected analytics. While AI tools exist in isolation, there's no **unified, productized stack** built specifically for PR pros that seamlessly integrates:
+* Faster workflows
+* Media-first strategies
+* Real-time analysis
+* Storytelling without losing the human touch
 
-* Media monitoring
-* Content creation
-* Impact measurement
-* Crisis detection
+## 🔧 Core Feature Stack
 
-All within one AI-native platform.
+### 1. **Media Reputation Auto-Audit**
 
----
+* Scores brand sentiment across news, podcasts, YouTube
+* Uses LLM + sentiment classifiers
+* UI: Dashboard with trends and competitive benchmarks
 
-## 🎯 Vision
+### 2. **Narrative Gap Detection**
 
-Build a **modular, AI-powered PR Suite** that enables professionals to automate, scale, and measure every touchpoint of public relations—without losing the human creativity in storytelling.
+* Identifies content blind spots
+* Uses vector embeddings + LLMs
+* UI: Radar chart showing under/over-leveraged angles
 
-> Think: **“Notion meets HubSpot for PR”**
+### 3. **Brief Generator Bot**
 
----
+* Creates story hooks, PR briefs in your brand tone
+* UI: Prompt builder + exportable outputs
 
-## 🛠️ Design: Core Feature Stack
+### 4. **Message Stress Testing**
 
-### 1. 🧠 Media Reputation Auto-Audit
+* Simulates journalist interviews
+* RAG from journalist tweets/articles
+* UI: Pitch scorecards and mock Q\&A
 
-* **What**: Score brand sentiment across news, YouTube, podcasts, and blogs.
-* **How**: LLM-based entity extraction + tone/sentiment analysis.
-* **UI**: Sentiment dashboard with trends & competitor comparison.
+### 5. **PR Impact Attribution**
 
-### 2. 🔍 Narrative Gap Detection
+* Connects media coverage to business KPIs
+* GA4, CRM, Search Console integrations
+* UI: Interactive conversion timeline
 
-* **What**: Discover narrative blind spots by comparing your content vs. industry stories.
-* **How**: Vector embeddings + LLM narrative comparison.
-* **UI**: Radar heatmap showing under-leveraged angles and overexposed stories.
+### 6. **AI Micro-Content Repurposer**
 
-### 3. 📄 Brief Builder Bot
+* Converts press releases to carousels, reels, threads
+* Uses templates + tone modeling
+* UI: Canva/Figma-ready export panel
 
-* **What**: Auto-generate PR briefs, hooks, and story angles in brand voice.
-* **How**: Fine-tuned LLMs trained on past PR artifacts + tone modeling.
-* **UI**: Prompt builder + export to PDF/email.
+### 7. **Thought Leadership Generator**
 
-### 4. 🔥 Message Stress Testing (Simulated Journalist)
+* Crafts founder POVs, quote cards
+* Trend mining + narrative generation
 
-* **What**: Stress-test your narrative through simulated press interviews.
-* **How**: RAG over journalist tweets/articles + persona simulation.
-* **UI**: Mock interview interface with critique and pitch ratings.
+### 8. **AI Interview Coach**
 
-### 5. 📊 PR Impact Attribution
+* Simulated press Q\&A for executives
+* Persona-based training with feedback
 
-* **What**: Attribute earned media to real outcomes—traffic, search lift, conversions.
-* **How**: GA4 + Search Console + Shopify/CRM integrations.
-* **UI**: Timeline map linking coverage → traffic → conversions.
+### 9. **Smart FAQ (Media Widget)**
 
-### 6. 📱 AI Micro-Content Repurposing
+* RAG over product docs and press kits
+* Embeddable SEO-friendly newsroom chatbot
 
-* **What**: Repurpose press releases into multi-format social content.
-* **How**: LLM + templated social formats + tone and design auto-branding.
-* **UI**: Drag-and-drop content studio with Canva/HeyGen/Figma exports.
+### 10. **Real-Time Crisis Detector**
 
-### 7. 🎤 AI Interview Coach
+* Detects dark web sentiment spikes
+* LLM anomaly detection + alert scoring
 
-* **What**: Train executives via roleplay with simulated journalist Q\&A.
-* **How**: RAG on past interviews + persona-driven prompts.
-* **UI**: Practice interface with scoring, tips, and improvement tracking.
+## 🪖 MVP Feature Prioritization
 
-### 8. 💡 Thought Leadership Generator
-
-* **What**: Create founder POV content, quote cards, articles.
-* **How**: Trend mining + data-to-narrative storytelling.
-* **UI**: Thought calendar + prompt engine.
-
-### 9. 📚 AI FAQ for Journalists (Smart Media Kit)
-
-* **What**: Embeddable AI-powered FAQ widget for media queries.
-* **How**: RAG on product docs + press kits.
-* **UI**: Chat-style widget for newsroom pages (AEO & SEO friendly).
-
-### 10. 🚨 Real-Time Crisis Detector
-
-* **What**: Spot sentiment shifts, dark web mentions, emerging PR risks.
-* **How**: Real-time crawler + anomaly detection + LLM alerts.
-* **UI**: Crisis dashboard with alerts, severity scores, and playbook guidance.
-
----
-
-## 📐 Rationale
-
-* **Market Gap**: Existing PR tools are siloed and not built with an AI-native approach.
-* **Feasibility**: Most components leverage off-the-shelf LLMs + standard integrations.
-* **Differentiation**: Tailored for PR workflows—media-first, not content-first.
-* **Revenue Model**: SaaS tiers + white-label licensing for PR agencies.
+| Feature                | Priority     |
+| ---------------------- | ------------ |
+| Media Reputation Audit | ✅ Core       |
+| Brief Generator        | ✅ Core       |
+| Message Stress Testing | ✅ Core       |
+| Impact Attribution     | ✅ Core       |
+| Content Repurposing    | ✅ Core       |
+| Smart FAQ Widget       | Nice-to-have |
+| Interview Coach        | Nice-to-have |
+| Crisis Detector        | V2 Roadmap   |
 
 ---
 
-## 🚀 Go-To-Market
+# 🤖 LangGraph Agent Orchestration
 
-**Positioning**
+![Agent Diagram](https://github.com/user-attachments/assets/67918c52-1b6a-4028-b2a3-d4d35db67587)
 
-> “Not your regular PR tool. Your AI co-pilot for building iconic reputations.”
-
-**Target Audience**
-
-* PR Agencies
-* Brand Managers
-* Founders
-* In-house Communication Teams
-
-**Acquisition Channels**
-
-* LinkedIn Thought Leadership
-* Invite-Only Beta Rollouts
-* CRM + Newsroom Tool Integrations
-
----
-
-# 🧱 MVP Architecture: AI-Driven PR Platform
-
-## 🧩 1. Core Modules & Features for MVP
-
-| Feature Name              | Description                                                    | Priority     |
-| ------------------------- | -------------------------------------------------------------- | ------------ |
-| Media Reputation Audit    | NLP + Sentiment analysis on scraped news/blog/podcast mentions | ✅ Core       |
-| Brief Builder Bot         | Auto-generate PR briefs and hooks using LLM prompts            | ✅ Core       |
-| Message Stress Testing    | Simulate journalist Q\&A from scraped articles using RAG       | ✅ Core       |
-| PR Impact Attribution     | Connect media mentions to traffic/events via GA4 or similar    | ✅ Core       |
-| Micro-content Repurposing | Press release to content formats like carousels & threads      | ✅ Core       |
-| Smart FAQ Widget          | Embeddable Q\&A for journalists using AI                       | Nice-to-have |
-| Interview Coach (Beta)    | Simulated interview training for founders/CxOs                 | Nice-to-have |
-| Real-Time Crisis Detector | Sentiment spike alerting via crawler/API                       | V2           |
-
----
-# 🤖 LangGraph Agent Orchestration for AI-Powered PR Suite
-
-This document outlines the orchestration structure of AI agents built using a LangGraph-style architecture for the **AI-Powered Full-Stack PR Platform (MCP - Media Communication Partner)**.
+| Agent Name              | Description                                                  |
+| ----------------------- | ------------------------------------------------------------ |
+| Supervisor Agent        | Routes requests and manages workflow orchestration           |
+| Reputation Scanner      | Performs sentiment analysis + NER on scraped media           |
+| Narrative Gap Agent     | Finds story blind spots via content contrast embedding       |
+| Brief Generator Agent   | Produces hooks and briefs in branded tone                    |
+| Message Stress Agent    | Simulates journalist interviews and scores pitch responses   |
+| Attribution Agent       | Connects coverage to conversions and KPIs                    |
+| Content Repurpose Agent | Converts PR content into reels, carousels, social copy       |
+| Thought Leader Agent    | Generates POV content, quotes, and trend-based founder posts |
+| Interview Coach Agent   | Helps execs rehearse for press interviews                    |
+| Smart FAQ Agent         | Builds embeddable, contextual PR chat widgets                |
+| Crisis Detector Agent   | Monitors dark web and real-time sentiment anomalies          |
 
 ---
 
-## 🔄 Agent Orchestration Overview
-![image](https://github.com/user-attachments/assets/67918c52-1b6a-4028-b2a3-d4d35db67587)
-
-
----
-
-## 🧠 Agent Role Summary
-
-| Agent Name               | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-| **Supervisor Agent**     | Orchestrates all agent tasks and routes incoming prompts.                   |
-| **Reputation Scanner**   | Performs sentiment analysis & NER across media.                             |
-| **Narrative Gap Agent**  | Identifies narrative blind spots compared to industry stories.              |
-| **Brief Generator**      | Creates PR briefs, story hooks, and talking points.                         |
-| **Message Stress Agent** | Simulates journalist interviews and rates responses.                        |
-| **Attribution Agent**    | Links PR mentions to actual business impact via GA4, CRM, etc.              |
-| **Content Repurpose Agent** | Transforms PR materials into carousels, reels, and short-form content.  |
-| **Thought Leader Agent** | Crafts trend-based founder POVs and quote cards.                            |
-| **Interview Coach Agent**| Coaches executives with AI-based mock sessions and feedback.                |
-| **Smart FAQ Agent**      | Builds embeddable AI FAQ widgets for journalist queries.                    |
-| **Crisis Detector Agent**| Detects real-time PR risks and sentiment shifts.                            |
-
----
-
-## 🧩 Agent Architecture Notes
-
-- Built with modular, independent LangGraph agents
-- Each agent is powered by RAG pipelines, LLMs, and/or third-party integrations
-- Supervisor ensures flow management and task resolution between agents
-- Perfect for multi-step prompt chains and composable workflows in PR automation
-
----
-
-
-
-
-## 🏗️ 2. High-Level System Architecture Diagram
+## 📏 Architecture Overview
 
 ```mermaid
 graph TD
-    FE["Frontend (Next.js)\n- Dashboard\n- Brief Builder\n- Sentiment Reports\n- Q&A Simulation UI"]
-
-    FE --> APIGW["API Gateway\n(FastAPI/Express)"]
-    FE --> AUTH["Auth & User Mgmt\n(Clerk/Auth0/Firebase)"]
-    FE --> STORAGE["File/Media Store\n(Firebase/AWS S3)"]
+    FE["Frontend (Next.js)"] --> APIGW["API Gateway (FastAPI/Express)"]
+    FE --> AUTH["Auth (Clerk/Firebase)"]
+    FE --> STORAGE["Storage (S3/Firebase)"]
 
     APIGW --> CORE["Backend Core"]
-
     CORE --> FM["Feature Modules"]
-    FM --> RS["Reputation Scanner\n(LLM + NER + Sentiment)"]
-    FM --> BG["Brief Generator\n(LLM fine-tuned on PR)"]
-    FM --> QA["Q&A Bot\n(RAG over journalist corpus)"]
-    FM --> AE["Attribution Engine\n(Media ↔ Analytics linkage)"]
+
+    FM --> RS["Reputation Scanner"]
+    FM --> BG["Brief Generator"]
+    FM --> QA["Q&A Bot"]
+    FM --> AE["Attribution Engine"]
     FM --> MG["Micro-content Generator"]
 
-    CORE --> VECTOR["Vector DB (Weaviate)\nJournalist embeddings, brand data"]
-    VECTOR --> LLM["LLM API Layer\n(Gemini/OpenAI or fine-tuned models)"]
+    CORE --> VECTOR["Vector DB (Weaviate)"]
+    VECTOR --> LLM["LLM Layer (Gemini / OpenAI)"]
 ```
 
----
+## 🔌 Third-Party Integrations
 
-## 🔌 3. Third-Party Integrations (for MVP)
+| Purpose              | Tools                           |
+| -------------------- | ------------------------------- |
+| Auth & Roles         | Clerk.dev / Firebase Auth       |
+| Cloud Storage        | AWS S3 / Firebase Storage       |
+| LLM APIs             | OpenAI / Gemini / Claude        |
+| Scraping             | Diffbot / NewsCatcher / SerpAPI |
+| Attribution          | GA4, PostHog, Search Console    |
+| Vectors & Embeddings | Weaviate, Pinecone, OpenAI Ada  |
+| Design Export        | Canva API / Figma / Zapier      |
 
-| Purpose                  | Tool/Service                     |
-| ------------------------ | -------------------------------- |
-| Auth & Multi-Tenant      | Clerk.dev or Firebase Auth       |
-| Storage (Press Releases) | AWS S3 / Firebase Storage        |
-| LLM APIs                 | OpenAI / Gemini / Claude         |
-| Web Scraping             | Diffbot, NewsCatcher, or SerpAPI |
-| Analytics Attribution    | Google Analytics (GA4), PostHog  |
-| Vector Database          | Weaviate / Pinecone              |
-| Embedding Models         | OpenAI ADA-002 / Cohere Embed    |
-| Social Content Export    | Figma / Canva API / Zapier       |
+## 🪧 Developer Stack
 
----
-
-## 🛠️ 4. Dev Stack Suggestion
-
-| Layer      | Tech Choice                         |
+| Layer      | Tech Stack                          |
 | ---------- | ----------------------------------- |
 | Frontend   | Next.js + Tailwind CSS              |
-| Backend    | FastAPI or Node.js (Express)        |
-| Database   | PostgreSQL via Supabase or Prisma   |
-| Vector DB  | Weaviate (with hybrid filters)      |
-| Auth       | Clerk.dev or Firebase Auth          |
-| LLM API    | OpenAI (gpt-4o) or Gemini Pro       |
+| Backend    | Node.js (Express) / FastAPI         |
+| DB         | Supabase (Postgres) + Prisma        |
+| Vector DB  | Weaviate (hybrid filter enabled)    |
 | Deployment | Vercel (FE) + Render / Railway (BE) |
 | Monitoring | Sentry + PostHog                    |
 
----
+## ⏱️ Phased Rollout
 
-## 🚦 5. Phased Rollout Plan
-
-| Phase | Goal                            | Features Focus                    |
-| ----- | ------------------------------- | --------------------------------- |
-| Alpha | Internal prototype validation   | Brief builder, sentiment audit    |
-| Beta  | Early testers (freemium model)  | Add stress test & attribution     |
-| V1    | Open to small PR firms/agencies | Micro-content, media page widget  |
-| V2    | B2B SaaS scale (comms teams)    | Crisis detector, API integrations |
+| Phase | Objective                 | Modules                            |
+| ----- | ------------------------- | ---------------------------------- |
+| Alpha | Internal test build       | Brief builder, sentiment scan      |
+| Beta  | Limited user rollout      | Add Q\&A stress test + attribution |
+| V1    | Open PR agency onboarding | Content studio, media widgets      |
+| V2    | Full-scale SaaS rollout   | Crisis detection + deep analytics  |
 
 ---
+
+## 🚀 Go-To-Market Plan
+
+**Positioning:**
+
+> "Not your regular PR tool. Your AI co-pilot for building iconic reputations."
+
+**Target Users:**
+
+* PR Agencies
+* Brand Managers
+* Communication Teams
+* Founders & Executives
+
+**Growth Channels:**
+
+* LinkedIn Thought Leadership
+* Invite-Only Beta
+* CRM + Newsroom Integrations
 
 ## 💼 License
 
-MIT License or commercial license (TBD based on monetization model).
+MIT or commercial license (TBD based on monetization).
