@@ -43,10 +43,6 @@ https://github.com/user-attachments/assets/9dbfe67c-66cd-4633-9901-c2055cf95017
 
 
 
-
-
-
-
 ## 🧩 Current Problem
 
 Modern PR professionals are drowning in manual workflows, reactive storytelling, and disconnected analytics. While AI tools exist in isolation, there's no **unified, productized stack** built specifically for PR pros that seamlessly integrates:
@@ -178,6 +174,47 @@ Build a **modular, AI-powered PR Suite** that enables professionals to automate,
 | Real-Time Crisis Detector | Sentiment spike alerting via crawler/API                       | V2           |
 
 ---
+# 🤖 LangGraph Agent Orchestration for AI-Powered PR Suite
+
+This document outlines the orchestration structure of AI agents built using a LangGraph-style architecture for the **AI-Powered Full-Stack PR Platform (MCP - Media Communication Partner)**.
+
+---
+
+## 🔄 Agent Orchestration Overview
+![image](https://github.com/user-attachments/assets/67918c52-1b6a-4028-b2a3-d4d35db67587)
+
+
+---
+
+## 🧠 Agent Role Summary
+
+| Agent Name               | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **Supervisor Agent**     | Orchestrates all agent tasks and routes incoming prompts.                   |
+| **Reputation Scanner**   | Performs sentiment analysis & NER across media.                             |
+| **Narrative Gap Agent**  | Identifies narrative blind spots compared to industry stories.              |
+| **Brief Generator**      | Creates PR briefs, story hooks, and talking points.                         |
+| **Message Stress Agent** | Simulates journalist interviews and rates responses.                        |
+| **Attribution Agent**    | Links PR mentions to actual business impact via GA4, CRM, etc.              |
+| **Content Repurpose Agent** | Transforms PR materials into carousels, reels, and short-form content.  |
+| **Thought Leader Agent** | Crafts trend-based founder POVs and quote cards.                            |
+| **Interview Coach Agent**| Coaches executives with AI-based mock sessions and feedback.                |
+| **Smart FAQ Agent**      | Builds embeddable AI FAQ widgets for journalist queries.                    |
+| **Crisis Detector Agent**| Detects real-time PR risks and sentiment shifts.                            |
+
+---
+
+## 🧩 Agent Architecture Notes
+
+- Built with modular, independent LangGraph agents
+- Each agent is powered by RAG pipelines, LLMs, and/or third-party integrations
+- Supervisor ensures flow management and task resolution between agents
+- Perfect for multi-step prompt chains and composable workflows in PR automation
+
+---
+
+
+
 
 ## 🏗️ 2. High-Level System Architecture Diagram
 
