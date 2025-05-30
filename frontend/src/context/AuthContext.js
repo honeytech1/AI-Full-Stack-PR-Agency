@@ -20,6 +20,19 @@ export const AuthProvider = ({ children }) => {
 
   // Configure axios defaults
   useEffect(() => {
+    const fetchUserProfile = async () => {
+      try {
+        const response = await axios.get(`${BACKEND_URL}/api/auth/me`);
+        setUser(response.data);
+        setIsAuthenticated(true);
+      } catch (error) {
+        console.error('Failed to fetch user profile:', error);
+        logout();
+      } finally {
+        setLoading(false);
+      }
+    };
+
     const token = localStorage.getItem('auth_token');
     if (token) {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
@@ -27,7 +40,7 @@ export const AuthProvider = ({ children }) => {
     } else {
       setLoading(false);
     }
-  }, []);
+  }, [BACKEND_URL]);
 
   const fetchUserProfile = async () => {
     try {
