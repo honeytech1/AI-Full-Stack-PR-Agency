@@ -47,7 +47,7 @@ db = client.pr_agency
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')  # Updated model name
 else:
     logger.error("GEMINI_API_KEY not found in environment variables")
 
