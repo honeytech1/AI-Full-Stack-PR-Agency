@@ -10,7 +10,8 @@ import {
   AlertTriangle,
   CheckCircle,
   MessageCircle,
-  HelpCircle
+  HelpCircle,
+  FileText
 } from 'lucide-react';
 import axios from 'axios';
 
