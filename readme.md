@@ -1,3 +1,11 @@
+# Project Structure & Getting Started
+
+This project is organized into a frontend and a backend application.
+
+*   **Frontend (`/frontend`):** A Next.js application. See [`frontend/README.md`](./frontend/README.md) for setup and run instructions.
+*   **Backend (`/backend`):** A Python (FastAPI) application. See [`backend/README.md`](./backend/README.md) for setup and run instructions.
+
+---
 # 📰 Product PDR: AI-Powered Full-Stack PR Suite (MCP)
 
 ## 💡 Inspiration
